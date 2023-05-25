@@ -28,7 +28,7 @@ export default function Header() {
         <Link className="text-primary font-bold" to="/products">
           <p>Productos</p>
         </Link>
-        <Link className="text-primary font-bold" to="/categorias">
+        <Link className="text-primary font-bold" to="/category">
           <p>Categorias</p>
         </Link>
       </nav>
