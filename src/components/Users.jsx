@@ -19,23 +19,25 @@ export default function Users() {
 
   return (
     <>
-      <div className="mb-8 p-4">
         <h1 className="text-[40px] font-black text-center">
-          Usuarios registrados
-        </h1>
-      </div>
-
+        Usuarios registrados
+      </h1>
       {users.length === 0 && <p>Cargando...</p>}
-      {<p>Total: {users.total} </p>}
-      <section className="">
+      {
+        <h3 className="text-2xl font-bold text-gray-700 max-w-sm mx-auto">
+          Total: {users.total}{" "}
+        </h3>
+      }
+      <div className="bg-white mx-auto max-w-full flex flex-wrap justify-center rounded-lg shadow-xl gap-2">
         {users.data?.map((user, i) => {
           return (
-            <Link key={i} to={"/user/" + user.id}>
+            <Link key={i} to={"/user/" + user.id} className="w-64 md:w-auto  px-2 my-2">
               <User {...user} />
             </Link>
           );
         })}
-      </section>
+      </div>
     </>
+  
   );
 }

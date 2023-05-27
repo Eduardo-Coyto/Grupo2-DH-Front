@@ -9,12 +9,14 @@ import Products from "./components/Products.jsx";
 import Product from "./components/Product.jsx";
 import ProductDetail from "./components/ProductDetail.jsx";
 import Category from "./components/Category.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 function App() {
   return (
     <div>
       <Header />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/users" element={<Users />} />
         <Route path="/products" element={<Products />} />
