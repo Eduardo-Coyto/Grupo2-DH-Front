@@ -18,8 +18,8 @@ export default function Header() {
         <div className="xl:w-1/6 text-center">
           <Link className="" to="/" onClick={handleLinkClick}>
             <img
-              className="w-20"
-              src="http://localhost:3002/images/img/DS.png"
+              className="w-36"
+              src="http://localhost:3002/images/img/digitalShop.png"
               alt="logo Digital Shop"
             />
           </Link>
